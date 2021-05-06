@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Method</title>
+    <script>
+        const oldarr=['Vinod','bahadur','thapa'];
+        console.log(oldarr[0]);
+        console.log(oldarr[1]);
+        console.log(oldarr[2]);
+        console.log(oldarr);
+        const newarr=oldarr.map(function(Cvalue){
+            return Cvalue;
+        });
+        console.log(newarr);
+        const newarr2=oldarr.map(function(Cvalue){
+            return Cvalue +"Thapa";
+        });
+        console.log(newarr2);
+        const newarr3=oldarr.map(function(Cvalue,index){
+            return Cvalue+ " "+index;
+        });
+        console.log(newarr3);
+        const newarr4=oldarr.map(function(Cvalue,index,arr){
+            console.log(arr);
+        });
+        console.log(newarr4)
+    </script>
+</head>
+<body>
+    <H1>Heleo</H1>
+    
+</body>
+</html>

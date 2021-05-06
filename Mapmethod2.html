@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapmethod2</title>
+    <script>
+        const studentdata=[
+            {id:0,name:"Vinod",degree:"Msc"},
+            {id:1,name:"Thapa",degree:"Bcs"},
+            {id:2,name:"ThapaTechnical",degree:"cs"}
+        ];
+        console.log(studentdata[2].name);
+        const newdata=studentdata.map((Cvalue)=>{
+            return `My name is ${Cvalue.name}`;
+        });
+        console.log(newdata);
+        const newdata2=studentdata.map((Cvalue)=>{
+            return `My name is ${Cvalue.name} and my highest degree is ${Cvalue.degree}`;
+        });
+        console.log(newdata2);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
