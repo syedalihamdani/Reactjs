@@ -1,0 +1,13 @@
+ button{
+   border: 0px solid black;
+   width: 150px;
+   height: 40px;
+   background-color: blue;
+   color: #c1e044;
+   border-radius: 23px;
+   font-size: 20px;
+ }
+ h1{
+   font-size: 50px;
+   margin-left: 60px;
+ }
