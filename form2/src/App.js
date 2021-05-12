@@ -25,10 +25,10 @@ const onsubmit=(event)=>{
 
       <h1>Hello! {fullname} {lfullname}</h1>
       <input type="text" placeholder="Enter your Name" 
-      onChange={valueinput} />
+      onChange={valueinput} value={name} />
       <br/><br/>
       <input type="text" placeholder="Enter your Name" 
-      onChange={lvalueinput} />
+      onChange={lvalueinput}  value={lname}/>
       <br/><br/>
       <button type="submit" >Submit Now</button>
       </form>
