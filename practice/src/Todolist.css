@@ -1,0 +1,13 @@
+.ok{
+    display: flex;
+    
+}
+i{
+    margin-right: 23px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+}
+i:hover{
+    color: red;
+}

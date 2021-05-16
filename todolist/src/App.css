@@ -1,0 +1,31 @@
+body{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(autofit,minmax(250px,350px));
+    justify-content: center;
+}
+.central-div{
+    border: 2px solid black;
+    border-radius: 23px;
+    margin: 75px 23px;
+    background-color:white;
+    width: 350px;
+    height: 500px;
+}
+h1{
+    background-color:lightseagreen;
+    text-align: center;
+}
+input{
+    width: 277px;
+    height: 23px;
+    margin: 0px 12px;
+}
+button{
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+}
+button:hover{
+    background-color: green;
+}
