@@ -1,0 +1,7 @@
+.get{
+    display: flex;
+}
+span:hover{
+    color: red;
+
+}

@@ -1,0 +1,44 @@
+.sc{
+    background-color: lightskyblue;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(250px,300px));
+    grid-gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
+.app{
+    border: 4px solid black;
+    border-radius: 23px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+h1{
+    background-color: tomato;
+    text-align: center;
+    padding: 5px 5px;
+}
+input{
+    width: 221px;
+    height: 33px;
+    margin: 5px 4px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    border-bottom:3px solid lightslategrey;
+    outline: none;
+    font-size: 20px;
+
+}
+button{
+    width: 50px;
+    
+}
+.new{
+    display: flex;
+}
