@@ -1,0 +1,26 @@
+.note2{
+    border: 2px solid #a395b7;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    box-shadow: 6px 6px #a395b7;
+    border-radius: 23px;
+    padding: 23px 23px;
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px 173px;
+
+}
+.icon{
+    color: orange;
+}
+.btn:hover{
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+
+}

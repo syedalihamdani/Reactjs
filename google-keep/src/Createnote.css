@@ -1,0 +1,52 @@
+.note form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 460px;
+    box-shadow: 6px 6px #a395b7;
+    border: 2px solid #a395b7;
+    border-radius: 23px;
+    margin: 23px 23px;
+    padding: 23px 23px;
+    
+}
+@media only screen and (max-width:356px){
+    .note form{
+        width: 250px;
+        margin: 23px 13px;
+        padding: 23px 4px;
+    }
+}
+.note{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  
+}
+
+.box{
+    border: none;
+}
+.textarea{
+    height: 140px;
+    font-size: 23px;
+}
+.input{
+    height: 50px;
+    font-size: 23px;
+    font-weight: bold;
+}
+.button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: orange;
+    /* margin: 0px 374px; */
+    font-weight: bold;
+}
+.button:hover{
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+}
+ 

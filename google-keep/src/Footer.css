@@ -1,0 +1,7 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    font-size: 23px;
+    /* margin-top: 100vh; */
+}
