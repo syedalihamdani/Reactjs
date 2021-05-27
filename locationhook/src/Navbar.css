@@ -1,0 +1,20 @@
+/* a.homelink{
+    background-color:  blue;
+    border-bottom: red;
+} */
+a.homelink{
+    color:black;
+    background-color:white;
+    
+}
+.link{
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 23px 23px;
+    padding:  5px 5px;
+    border-radius: 23px;
+    background-color: black;
+    color: white;
+}
