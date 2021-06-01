@@ -1,0 +1,28 @@
+.outer{
+    width: 100vw;
+    height: 100vh;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    padding: 200px 23px;
+  
+  }
+  .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid blue;
+    padding: 23px 23px;
+    background-color: blueviolet;
+    height: 500px;
+    width: 500px;
+  
+  }
+  .input{
+    width: 300px;
+    height: 38px;
+  
+  }
+  img{
+      margin: 23px 23px;
+  }

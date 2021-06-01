@@ -1,5 +1,5 @@
 import React ,{useState} from 'react';
-import './App';
+import './App.css';
 
 const App=()=>{
   const [name,setname]=useState('');
@@ -7,7 +7,7 @@ const App=()=>{
   const [lfullname,lsetfullname]=useState('');
   const [lname,lsetname]=useState('');
 const valueinput=(event)=>{
- console.log(event.target.value);
+//  console.log(event.target.value);
  setname(event.target.value);
 }
 const lvalueinput=(event)=>{
@@ -20,16 +20,14 @@ const onsubmit=(event)=>{
 }
   return(
     <>
-    <div className='divtag'>
-      <form onSubmit={onsubmit}>
-
+    <div className='outer'>
+      <form className='inner' onSubmit={onsubmit}>
       <h1>Hello! {fullname} {lfullname}</h1>
-      <input type="text" placeholder="Enter your Name" 
+      <input className='input' type="text" placeholder="Enter your First Name" 
       onChange={valueinput} value={name} />
-      <br/><br/>
-      <input type="text" placeholder="Enter your Name" 
+      <br/>
+      <input className='input' type="text" placeholder="Enter your Last Name" 
       onChange={lvalueinput}  value={lname}/>
-      <br/><br/>
       <button type="submit" >Submit Now</button>
       </form>
     </div>

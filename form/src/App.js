@@ -1,5 +1,5 @@
  import React ,{useState} from 'react';
- import './App';
+ import './App.css';
 
  const App=()=>{
    const [name,setname]=useState('');
@@ -13,13 +13,15 @@ const onsubmit=()=>{
 }
    return(
      <>
-     <div className='divtag'>
+     <div className='outer'>
+
+     <div className='inner'>
        <h1>Hello! {fullname}</h1>
-       <input type="text" placeholder="Enter your Name" 
+       <input className='input' type="text" placeholder="Enter your Name" 
        onChange={valueinput} />
        <button onClick={onsubmit}>Submit Now</button>
-
      </div>
+       </div>
      </>
    )
  }

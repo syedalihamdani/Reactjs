@@ -1,4 +1,5 @@
 import React ,{useState} from 'react';
+import './App.css';
 
 const App=()=>{
   const [fullname,setfullname]=useState({
@@ -29,32 +30,35 @@ const [Sfullname,Ssetfullname]=useState('');
   }
   return(
     <>
-    <form onSubmit={onsubmit}>
+    <div className='outer'>
+
+    <form className='inner' onSubmit={onsubmit}>
       <h1>Hello! {Sfullname.fname} {Sfullname.lname}</h1><br/>{Sfullname.email}
       <br/>{Sfullname.phone}
       <h4>Enter your first name here</h4>
-      <input type="text" name="fname" placeholder="Input here" 
+      <input  className='input' type="text" name="fname" placeholder="Input here" 
       onChange={setvalue} value={fullname.fname} //not necessary 
       />
       
       <h4>Enter your last name here</h4>
-      <input type="text" name="lname" placeholder="Input here"  
+      <input  className='input' type="text" name="lname" placeholder="Input here"  
       onChange={setvalue} value={fullname.lname} //not necessary 
       />
 
        <h4>Enter your Email here</h4>
-      <input type="email" name="email" placeholder="Input here"  
+      <input  className='input' type="email" name="email" placeholder="Input here"  
       onChange={setvalue} value={fullname.email} //not necessary 
       />
 
        <h4>Enter your last name here</h4>
-      <input type="number" name="phone" placeholder="Input here"  
+      <input  className='input' type="number" name="phone" placeholder="Input here"  
       onChange={setvalue} value={fullname.phone} //not necessary 
-       />
+      />
 
       <br/><br/>
       <button type="submit">Submit </button>
     </form>
+      </div>
    </>  
   )
 

@@ -7,7 +7,7 @@
  const App=()=>{
      return(
          <>
-         <Name.Provider value={'Ali'}>
+         <Name.Provider value={'Aslam'}>
 
          <ComA/>
          </Name.Provider>

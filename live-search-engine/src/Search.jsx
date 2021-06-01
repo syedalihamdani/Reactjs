@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Search.css';
 import Sresult from './Sresult';
 
 const About=()=>{
@@ -8,13 +9,15 @@ const About=()=>{
         const data=event.target.value
         setimg(data);
         console.log(data)
-
     }
     return(
         <>
-        <br/> <br/> <br/>
-        <input type='text'  onChange={inputEvent} value={img} placeholder='Search here'/>
+        <div className='outer'>
+            <div className='inner'>
+        <input className='input' type='text'  onChange={inputEvent} value={img} placeholder='Search here'/>
         {img===' '?null: <Sresult name={img}/>}
+            </div>
+        </div>
         </>
     )
 }

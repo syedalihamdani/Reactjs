@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import './App.css';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import './App.css';
@@ -21,10 +22,12 @@ const App=()=>{
   }
   return(
     <>
-    <div className="tab">
+    <div className='outer'>
+    <div className="inner">
       <button onClick={Increment}> <AddIcon/></button>
       <h1>{number}</h1>
       <button onClick={Decrement}><RemoveIcon/></button>
+    </div>
     </div>
     </>
   )

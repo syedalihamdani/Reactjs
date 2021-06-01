@@ -1,1 +1,29 @@
- 
+ body{
+     background-color: #e03d3d;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ div{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 160px 23px;
+     padding: 23px 23px;
+ }
+ button{
+     height: 70px;
+     width: 300px;
+     font-size: 23px;
+     
+     font-weight: bold;
+     background-color: blue;
+     border-radius: 23px;
+     border: 2px solid blue;
+ }
+ button:hover{
+    height: 72px;
+    width: 302px;
+    color:goldenrod;
+ }

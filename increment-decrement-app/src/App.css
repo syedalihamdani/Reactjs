@@ -1,38 +1,36 @@
-body{
+.outer{
+  width: 100vw;
+  height: 100vh;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  padding: 200px 23px;
+
+}
+.inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid blue;
+  padding: 23px 23px;
   background-color: blueviolet;
-  display: grid;
-  grid-template-columns: repeat(autofit,minmax(250px,350px));
-  justify-content: center;
+  height: 300px;
+  width: 500px;
+
 }
-.tab{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  
-  border: 2px solid black;
-  border-radius: 23px;
-  margin: 75px 23px;
-  background-color:white;
-  width: 800px;
-  height: 400px;
-}
-h1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-  width: 233px;
-  border: 4px solid orange;
+.input{
+  width: 300px;
+  height: 38px;
+
 }
 button{
-  height: 70px;
-  width: 233px;
-  font-size: 33px;
-  background-color: orange;
-  color:#1f6b37;
-  font-weight: bold;
+  width: 200px;
+  height: 35px;
+  margin: 23px 23px;
+  background-color: burlywood;
+  border-radius: 23px;
 }
 button:hover{
-  background-color: green;
-  color: orange;
+  width: 202px;
+  height: 37px;
 }
