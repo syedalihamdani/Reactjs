@@ -1,47 +1,97 @@
-#root { height: 100% }
-html,
-body {
-  position: relative;
+.container{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right,#2af598,lightblue);
+}
+.wrapper{
+  /* border: 2px solid black; */
+  width: 70vw;
+  height: 70vh;
+  margin: 5rem auto;
+  overflow: hidden;
+  box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.562);
+}
+.slider-holder{
+  display: grid;
+  grid-template-columns: repeat(3,100%);
   height: 100%;
+  animation-name: slide;
+  animation-duration: 15s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+#slider_image_1{
+  background: lawngreen;
 }
-
-.swiper-container {
+img{
   width: 100%;
   height: 100%;
 }
+#slider_image_2{
+  background: yellow;
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
 }
+#slider_image_3{
+  background: tomato;
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+}
+.button-holder{
+  position: absolute;
+  bottom:0%;
+  left: 45%;
+}
+.button-holder .dots{
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 3rem;
+  background-color: lightcyan;
+  margin: 4rem .3rem;
+}
+@keyframes slide{
+  0%{
+      transform: translateX(0%);
+      
+  }
+  10%{
+      transform: translateX(-100%);
+
+  }
+  20%{
+      transform: translateX(-100%);
+
+  }
+  30%{
+      transform: translateX(-100%);
+
+  }
+  40%{
+      transform: translateX(-200%);
+
+  }
+  50%{
+      transform: translateX(-200%);
+
+  }
+  60%{
+      transform: translateX(-200%);
+
+  }
+  70%{
+      transform: translateX(0%);
+
+  }
+  80%{
+      transform: translateX(0%);
+
+  }
+  90%{
+      transform: translateX(0%);
+
+  }
+  100%{
+      transform: translateX(0%);
+
+  }
 }
